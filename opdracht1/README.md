@@ -1,15 +1,6 @@
-# frontend voor designers - opdracht 1
-Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
-
-Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
-
-[Demo 1 voor opdracht 1](https://koopreynders.github.io/frontendvoordesigners/opdracht1/v1/)
-
-
-Je kan ook een link plaatsen naar de bron code van de demo:
-
-[Code demo 1 voor opdracht 1](https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
-
+Frond-end voor Designers
+Elyse Zoonekynd 500775259
+08-05-2019
 
 4 weken geleden kregen wij de introductie van opdracht 1. Er waren 4 opties waar je zelf uit kon kiezen.
 
@@ -18,3 +9,8 @@ In een lijst gevonden studentenhuizen wil ik details kunnen bekijken om te bepal
 
 Hier ben ik direct mee aan de slag gegaan. Ik heb eerst verschillende opties geschetst. Hieruit heb ik de schetsen geordernd op welke ik als eerste wilde proberen en welke daarna.
 
+Ik heb meerdere opties verzonnen. 1 bevatte een soort extra laag waar de informatie in zou komen. Dit heb ik meerdere malen geprobeerd. Hiervoor kon ik geen geschikt bron vinden dus ben ik overgegaan naar mijn tweede optie.
+
+Nu kan je alvast wat basis informatie zien van de woning. Als je klikt op de knop bekijk meer klapt er een venster uit met extra informatie wat relevantant kan zijn voor de gebruiker.
+
+Ik heb helaas van deze varianten geen demo's omdat ik hier te weinig rekening mee gehouden heb.
