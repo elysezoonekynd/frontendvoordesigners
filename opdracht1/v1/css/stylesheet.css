@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'mont';
+  src: url(font/Mont-ExtraLightDEMO.otf) format ("opentype");
+}
+
+* {
+    font-family: 'mont';
+}
+
+header {
+    padding: 0;
+    max-width: 100%;
+}
+
+header nav {
+    background-color: #82368c;
+    padding-top: .5em;
+    padding-bottom:.5em;
+
+}
+
+header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+header nav ul li {
+    display:block;
+    margin: 1em;
+}
+
+header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+   text-decoration: underline;
+}
+
+#lijst {
+    display: block;
+
+}
+
+div img {
+    display: inline-block;
+    max-width: 20%;
+    max-height: 20%;
+    margin-left: 8em;
+    margin-top: 2.5em;
+}
+
+h1 {
+   text-align: center;
+}
+
+
+.zelf {
+    position: absolute;
+    margin-left:8em;
+    background-color: white;
+    padding: 1em;
+    font-size: 16px;
+    margin-top: 2em;
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5em;
+    font-size: 18px;
+    margin-top:2em;
+}
+
+p {
+    display: inline-block;
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 5.5em;
+
+}
+
+button {
+    display: inline-block;
+    position: absolute;
+    margin-top: 23em;
+    margin-left: 7.7em;
+    padding: 1em;
+    background-color: #82368c;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+form{
+    margin-top: 1.5em;
+    display:grid;
+    margin-left: 29em;
+}
+
+fieldset {
+    display: grid;
+    border-style: none;
+}
+
+input:checked {
+background-color: #82368c;}
+
+input[type=checkbox]{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #82368c;}
+
+
+.active {
+    visibility: hidden;
+    position: absolute;
+}
