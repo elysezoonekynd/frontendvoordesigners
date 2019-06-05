@@ -12,8 +12,8 @@ var request = new XMLHttpRequest();
 request.open('get', uri);
 request.responseType = 'json';
 request.send();
-
-request.addEventListener("load", function(){
+button = document.querySelector('button');
+button.addEventListener("click", function(){
   var data = request.response;
   console.log("request is geladen: ",request.response);
 populateHeader(data[0]);

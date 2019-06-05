@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'mont';
+  src: url(font/Mont-ExtraLightDEMO.otf) format ("opentype");
+}
+
+* {
+    font-family: 'mont';
+}
+
+img {
+    width: 20%;
+}
