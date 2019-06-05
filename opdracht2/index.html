@@ -1,0 +1,76 @@
+<!-- Bron: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>PRAAG</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="img/vlag.png" type="image/x-icon" />
+
+</head>
+<body>
+
+<h1> Praag vakantiefoto's</h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 - 6</div>
+    <img src="img/praag.jpeg" alt="foto van praag">
+    <div class="text">Prachtige reis naar Praag</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 - 6</div>
+    <img src="img/fiets.jpeg" alt="foto van praag">
+    <div class="text">Gezamelijk fietsen</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 - 6</div>
+    <img src="img/kerk.jpeg" alt="foto van praag">
+    <div class="text">Indrukwekkende kerk</div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 - 6</div>
+    <img src="img/mama.jpeg" alt="foto van praag">
+    <div class="text">Spadag</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 - 6</div>
+    <img src="img/trdnlink.jpeg" alt="foto van praag">
+    <div class="text">Traditie</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 - 6</div>
+    <img src="img/muur.jpeg" alt="foto van praag">
+    <div class="text">Joodse wijk</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="terug" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="door" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script src="js/javascript.js"></script>
+</body>
+</html>
