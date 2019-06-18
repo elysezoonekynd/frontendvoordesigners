@@ -58,11 +58,14 @@ function populateHeader(jsonObj) {
     var myImg = document.createElement('img');
     myImg.src = jsonObj['cover'];
 
+   var genre =document.createElement('h2')
+   genre.textContent = jsonObj ['genres'];
+
     var myArticle = document.createElement('article');
     myArticle.appendChild(myH1);
+     myArticle.appendChild(genre);
     myArticle.appendChild(myImg);
     myArticle.appendChild(MyPara);
-
 
     section.appendChild(myArticle);
 }

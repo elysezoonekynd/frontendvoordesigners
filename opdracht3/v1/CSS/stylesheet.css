@@ -5,15 +5,19 @@
 
 * {
     font-family: 'mont';
+    background-color: #faf3e6 ;
 }
 
 img {
     width: 50%;
+    margin-bottom: 2em;
 
 }
 
 h1 {
-    color: lightblue;
+    color: orange;
+    text-align: center;
+    font-size: 25px;
 
 }
 .hide {
@@ -22,13 +26,18 @@ h1 {
 
 p { font-size: 14px;
     max-width: none;
-    text-align: center;}
+    text-align: center;
+margin-bottom: 2em;}
 
 button {
+    display: block;
     padding: 2em;
     color: black;
-    background-color: lightblue;
+    background-color: orange;
     border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
 }
 
 article {
@@ -40,13 +49,20 @@ section {
     grid-template-columns: 1fr;
 
 }
+
+h2 {
+    font-size: 16px;
+    color: grey;
+}
 @media (min-width:60em) {
-    img { max-width: 100%;}
+    img { max-width: 100%;
+    margin-bottom: 1em;}
 
     p { max-width:none;
     text-align: none;}
 
-    h1 { color: pink;}
+    h1 { color: lightsalmon;
+    text-align: center;}
 
     section{
         display: grid;
@@ -61,11 +77,11 @@ section {
     button {
     padding: 2em;
     color: black;
-    background-color: pink;
+    background-color: lightsalmon;
     font: bold;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 2em;
+    text-align: center;
+    border-radius: 2em;
     }
+
 }
 
