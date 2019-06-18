@@ -4,41 +4,65 @@
 
 var uri = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 
-var header = document.querySelector('header');
+//var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-console.log("loadimagesmetXHR");
-var request = new XMLHttpRequest();
-request.open('get', uri);
-request.responseType = 'json';
-request.send();
-button = document.querySelector('button');
-button.addEventListener("click", function(){
-  var data = request.response;
-  console.log("request is geladen: ",request.response);
-populateHeader(data[0]);
-populateHeader(data[1]);
-populateHeader(data[2]);
-populateHeader(data[3]);
-populateHeader(data[4]);
-populateHeader(data[5]);
-  //er is data
-  //nu kun je iets doen
-  //section.textContent = JSON.stringify(data);});
-});
 
-function populateHeader(jsonObj) {
-  var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['title'];
-  section.appendChild(myH1);
 
-var MyPara = document.createElement('p');
-    MyPara.textContent = jsonObj['plot']
-    section.appendChild(MyPara);
+var button = document.querySelector('button');
+button.addEventListener("click", haalFilmsOp);
 
-var myImg = document.createElement('img')
-myImg.src = jsonObj['cover'];
-    section.appendChild(myImg);
+button.addEventListener("keydown", buttonIngedrukt);
+
+function haalFilmsOp(){
+    button.innerHTML = "Films ophalen...";
+    var request = new XMLHttpRequest();
+    request.open('get', uri);
+    request.responseType = 'json';
+    request.send();
+
+    request.addEventListener("load", function(){
+        setTimeout(function(){
+            button.innerHTML = "Films nog een keer laden";
+            var data = request.response;
+            //console.log("request is geladen: ",     request.response);
+            populateHeader(data[0]);
+            populateHeader(data[1]);
+            populateHeader(data[2]);
+            populateHeader(data[3]);
+            populateHeader(data[4]);
+            populateHeader(data[5]);
+        }, 2000);
+    });
+
+    request.timeout = 1000;
+
+    request.ontimeout = function() {
+        button.innerHTML = "Mislukt, nog een keer proberen!";
+    }
 }
 
+function buttonIngedrukt (e){
+    if (e.key == "m" || e.key == "s") {
+        haalFilmsOp();
+    }
+}
 
+function populateHeader(jsonObj) {
+    var myH1 = document.createElement('h1');
+    myH1.textContent = jsonObj['title'];
+
+    var MyPara = document.createElement('p');
+    MyPara.textContent = jsonObj['plot'];
+
+    var myImg = document.createElement('img');
+    myImg.src = jsonObj['cover'];
+
+    var myArticle = document.createElement('article');
+    myArticle.appendChild(myH1);
+    myArticle.appendChild(myImg);
+    myArticle.appendChild(MyPara);
+
+
+    section.appendChild(myArticle);
+}

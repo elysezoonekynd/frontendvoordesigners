@@ -8,5 +8,64 @@
 }
 
 img {
-    width: 20%;
+    width: 50%;
+
 }
+
+h1 {
+    color: lightblue;
+
+}
+.hide {
+    display: none;
+}
+
+p { font-size: 14px;
+    max-width: none;
+    text-align: center;}
+
+button {
+    padding: 2em;
+    color: black;
+    background-color: lightblue;
+    border-radius: 2em;
+}
+
+article {
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+@media (min-width:60em) {
+    img { max-width: 100%;}
+
+    p { max-width:none;
+    text-align: none;}
+
+    h1 { color: pink;}
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5em;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    button {
+    padding: 2em;
+    color: black;
+    background-color: pink;
+    font: bold;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2em;
+    }
+}
+
