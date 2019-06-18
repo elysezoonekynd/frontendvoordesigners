@@ -12,7 +12,7 @@ Toepassing van de theorie
 
 Breakdown schets:
 
-
+Deze staat op github onder Schets.html
 
 Eerst versie:
 In mijn eerste versie was ik nog niet heel ver. Wel was het gelukt om alles van json in te laden.
