@@ -41,6 +41,5 @@ De gebruiker heeft zelf de controle je kan op 4 verschillende manieren de films 
 09 Appearance follows behavior:
 Dit principe heb ik het meeste toegepast in de button. Door het testen kwam ik er achter dat de gebruikers niet wisten waar ze aan toe waren dus dit heb ik veranderd naar een duidelijke omschrijving.
 
-11.Strong visual hierarchies work best
-
+11.Strong visual hierarchies work best:
 Dit principe heb ik toegepast op het visuele element van de site. De films worden op desktop per 3 getoond waardoor je een gemakkelijk overzicht hebt. Op mobiel wordt er 1 film tegelijk getoont.
